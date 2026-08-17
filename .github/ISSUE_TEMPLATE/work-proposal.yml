@@ -1,14 +1,12 @@
 name: Work proposal
 description: Propose a concrete problem or outcome for the AI Development Control Plane program
 title: "[Proposal]: "
-labels:
-  - "type:proposal"
-  - "status:needs-triage"
+labels: []
 body:
   - type: markdown
     attributes:
       value: |
-        Describe the problem before prescribing architecture. Do not include secrets, private repository content, credentials, personal data, or vulnerability exploit details.
+        Describe the problem before prescribing architecture. Do not include secrets, private repository content, credentials, personal data, private host/network/device data, or vulnerability exploit details.
   - type: textarea
     id: problem
     attributes:
@@ -36,13 +34,14 @@ body:
         - Demo / Control Center
         - Cross-project
         - Community / Documentation
+        - Unsure
     validations:
       required: true
   - type: textarea
     id: evidence
     attributes:
       label: Evidence / references
-      description: Research, standards, measurements, examples, prior art, or links that support the proposal.
+      description: Public-safe research, standards, measurements, examples, prior art, or links that support the proposal.
   - type: textarea
     id: alternatives
     attributes:
@@ -60,9 +59,7 @@ body:
       options:
         - label: I searched for an existing Discussion or Issue covering the same problem.
           required: true
-        - label: I have not included secrets, credentials, private repository content, sensitive personal/host/network data, or vulnerability exploit details.
+        - label: I have not included secrets, credentials, private repository content, sensitive personal/host/network/device data, or vulnerability exploit details.
           required: true
-        - label: I understand that a proposal is community input and does not guarantee priority, implementation, acceptance, or private repository access.
-          required: true
-        - label: I agree to follow the Code of Conduct.
+        - label: I understand that a proposal is community input and does not guarantee priority, implementation, acceptance, release, or private repository access.
           required: true
