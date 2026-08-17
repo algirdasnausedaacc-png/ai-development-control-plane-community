@@ -1,0 +1,68 @@
+name: Work proposal
+description: Propose a concrete problem or outcome for the AI Development Control Plane program
+title: "[Proposal]: "
+labels:
+  - "type:proposal"
+  - "status:needs-triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the problem before prescribing architecture. Do not include secrets, private repository content, credentials, personal data, or vulnerability exploit details.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: What problem should be solved, and for whom?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: What observable result would make this proposal successful?
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Primary area
+      options:
+        - Canonical Control Plane
+        - Local AI / AI Connector
+        - Host Observability / PC Health
+        - Network / Cyber Security
+        - Devices
+        - Demo / Control Center
+        - Cross-project
+        - Community / Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence / references
+      description: Research, standards, measurements, examples, prior art, or links that support the proposal.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Optional. Include simpler or existing approaches if known.
+  - type: textarea
+    id: economics
+    attributes:
+      label: Zero-spend and resource impact
+      description: Known effects on tokens, CPU/GPU/RAM, electricity, storage, network, external services, or always-on processes.
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Submission checks
+      options:
+        - label: I searched for an existing Discussion or Issue covering the same problem.
+          required: true
+        - label: I have not included secrets, credentials, private repository content, sensitive personal/host/network data, or vulnerability exploit details.
+          required: true
+        - label: I understand that a proposal is community input and does not guarantee priority, implementation, acceptance, or private repository access.
+          required: true
+        - label: I agree to follow the Code of Conduct.
+          required: true
